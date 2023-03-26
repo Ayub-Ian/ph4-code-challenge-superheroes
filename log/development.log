@@ -45,3 +45,12 @@ FOREIGN KEY ("power_id")
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mPower Create (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2023-03-26 07:41:16.273108"], ["updated_at", "2023-03-26 07:41:16.273108"]]
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/heroes" for 127.0.0.1 at 2023-03-26 11:12:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroesController#index as */*
+  Parameters: {"title"=>"Add Todo Endpoint", "description"=>"Make sure you add the create Todo endpoint", "priority"=>0, "hero"=>{}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heroes_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 9.1ms | ActiveRecord: 0.7ms | Allocations: 36472)
+
+
