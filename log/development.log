@@ -78,3 +78,898 @@ Processing by PowersController#show as */*
 Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 520)
 
 
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-26 11:46:26 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:6:in `create'
+Completed 201 Created in 42ms (Views: 0.5ms | ActiveRecord: 5.1ms | Allocations: 32056)
+
+
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-26 11:48:02 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:6:in `create'
+Completed 201 Created in 18ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 16087)
+
+
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-26 11:51:11 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:5:in `create'
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:6:in `create'
+Completed 201 Created in 17ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 16087)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "hero_powers"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "strength" varchar, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "heros"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "heros" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "powers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+, CONSTRAINT "fk_rails_1e7d81986f"
+FOREIGN KEY ("power_id")
+  REFERENCES "powers" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230326072044)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230326071823),
+(20230326071854);
+
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-29 17:31:12.974646"], ["updated_at", "2023-03-29 17:31:12.974646"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "19883c1be68a9d3a7fbe99e7cc03b7901cf68118"], ["created_at", "2023-03-29 17:31:12.976867"], ["updated_at", "2023-03-29 17:31:12.976867"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "hero_powers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "strength" varchar, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "heros"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "heros" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "powers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+, CONSTRAINT "fk_rails_1e7d81986f"
+FOREIGN KEY ("power_id")
+  REFERENCES "powers" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230326072044)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230326071823),
+(20230326071854);
+
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-29 17:31:12.996253"], ["updated_at", "2023-03-29 17:31:12.996253"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-03-29 17:31:12.998603"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "19883c1be68a9d3a7fbe99e7cc03b7901cf68118"], ["created_at", "2023-03-29 17:31:13.000474"], ["updated_at", "2023-03-29 17:31:13.000474"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.2ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chris Hemsworth"], ["super_name", "Thor"], ["created_at", "2023-03-29 17:31:13.015787"], ["updated_at", "2023-03-29 17:31:13.015787"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Peter Parker"], ["super_name", "Spider-Man"], ["created_at", "2023-03-29 17:31:13.017561"], ["updated_at", "2023-03-29 17:31:13.017561"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chadwick Boseman"], ["super_name", "Black Pathner"], ["created_at", "2023-03-29 17:31:13.019158"], ["updated_at", "2023-03-29 17:31:13.019158"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Banner"], ["super_name", "Hulk"], ["created_at", "2023-03-29 17:31:13.020413"], ["updated_at", "2023-03-29 17:31:13.020413"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Steve Ditko"], ["super_name", "Dr Strange"], ["created_at", "2023-03-29 17:31:13.021827"], ["updated_at", "2023-03-29 17:31:13.021827"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gal Gadot"], ["super_name", "Wonder Woman"], ["created_at", "2023-03-29 17:31:13.023032"], ["updated_at", "2023-03-29 17:31:13.023032"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Super strength"], ["description", "has superhuman strength and can fly"], ["created_at", "2023-03-29 17:31:13.027859"], ["updated_at", "2023-03-29 17:31:13.027859"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reflexes"], ["description", "is alert,fast, with hightened senses"], ["created_at", "2023-03-29 17:31:13.029224"], ["updated_at", "2023-03-29 17:31:13.029224"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Martial arts"], ["description", "expert hand to hand combatant"], ["created_at", "2023-03-29 17:31:13.030500"], ["updated_at", "2023-03-29 17:31:13.030500"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible strength"], ["description", "has incredible superhuman strength"], ["created_at", "2023-03-29 17:31:13.031661"], ["updated_at", "2023-03-29 17:31:13.031661"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "complex shields"], ["description", "has powers to create barries and shields"], ["created_at", "2023-03-29 17:31:13.032775"], ["updated_at", "2023-03-29 17:31:13.032775"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/powers" for 127.0.0.1 at 2023-03-29 20:32:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#index as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "power"=>{}}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  ↳ app/controllers/powers_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 23ms (Views: 12.1ms | ActiveRecord: 0.6ms | Allocations: 38929)
+
+
+Started GET "/heroes" for 127.0.0.1 at 2023-03-29 20:33:06 +0300
+Processing by HeroesController#index as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "hero"=>{}}
+  [1m[36mHero Load (1.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heroes_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 1.5ms | Allocations: 14949)
+
+
+Started GET "/heroes/2" for 127.0.0.1 at 2023-03-29 20:33:18 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"2", "hero"=>{}}
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers]   [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "hero_powers" ON "powers"."id" = "hero_powers"."power_id" WHERE "hero_powers"."hero_id" = ?[0m  [["hero_id", 2]]
+[active_model_serializers]   ↳ app/controllers/heroes_controller.rb:10:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (27.2ms)
+Completed 200 OK in 40ms (Views: 27.2ms | ActiveRecord: 0.3ms | Allocations: 15431)
+
+
+Started GET "/heroes/1" for 127.0.0.1 at 2023-03-29 20:33:21 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"1", "hero"=>{}}
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers]   [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "hero_powers" ON "powers"."id" = "hero_powers"."power_id" WHERE "hero_powers"."hero_id" = ?[0m  [["hero_id", 1]]
+[active_model_serializers]   ↳ app/controllers/heroes_controller.rb:10:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (1.61ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1760)
+
+
+Started GET "/heroes/3" for 127.0.0.1 at 2023-03-29 20:33:26 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"3", "hero"=>{}}
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers]   [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "hero_powers" ON "powers"."id" = "hero_powers"."power_id" WHERE "hero_powers"."hero_id" = ?[0m  [["hero_id", 3]]
+[active_model_serializers]   ↳ app/controllers/heroes_controller.rb:10:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (1.32ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1760)
+
+
+Started GET "/heroes/4" for 127.0.0.1 at 2023-03-29 20:33:29 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"4", "hero"=>{}}
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers]   [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "hero_powers" ON "powers"."id" = "hero_powers"."power_id" WHERE "hero_powers"."hero_id" = ?[0m  [["hero_id", 4]]
+[active_model_serializers]   ↳ app/controllers/heroes_controller.rb:10:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (1.54ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1740)
+
+
+Started GET "/powers/4" for 127.0.0.1 at 2023-03-29 20:33:50 +0300
+Processing by PowersController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"4", "power"=>{}}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/powers_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 662)
+
+
+  
+ArgumentError (Unrecognized status code :success):
+  
+app/controllers/powers_controller.rb:10:in `show'
+Started GET "/powers" for 127.0.0.1 at 2023-03-29 20:33:58 +0300
+Processing by PowersController#index as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "power"=>{}}
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  ↳ app/controllers/powers_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1288)
+
+
+Started GET "/powers/4" for 127.0.0.1 at 2023-03-29 20:34:04 +0300
+Processing by PowersController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"4", "power"=>{}}
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/powers_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 536)
+
+
+  
+ArgumentError (Unrecognized status code :success):
+  
+app/controllers/powers_controller.rb:10:in `show'
+Started GET "/powers/4" for 127.0.0.1 at 2023-03-29 20:34:55 +0300
+Processing by PowersController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"4", "power"=>{}}
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/powers_controller.rb:8:in `show'
+[active_model_serializers] Rendered PowerSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 2169)
+
+
+Started GET "/powers" for 127.0.0.1 at 2023-03-29 20:35:05 +0300
+Processing by PowersController#index as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "power"=>{}}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  ↳ app/controllers/powers_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1314)
+
+
+Started GET "/powers/4" for 127.0.0.1 at 2023-03-29 20:35:10 +0300
+Processing by PowersController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"4", "power"=>{}}
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/powers_controller.rb:8:in `show'
+[active_model_serializers] Rendered PowerSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 661)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "hero_powers"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "strength" varchar, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "heros"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "heros" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "powers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+, CONSTRAINT "fk_rails_1e7d81986f"
+FOREIGN KEY ("power_id")
+  REFERENCES "powers" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230326072044)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230326071823),
+(20230326071854);
+
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-29 17:42:42.852650"], ["updated_at", "2023-03-29 17:42:42.852650"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "19883c1be68a9d3a7fbe99e7cc03b7901cf68118"], ["created_at", "2023-03-29 17:42:42.854836"], ["updated_at", "2023-03-29 17:42:42.854836"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "hero_powers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "strength" varchar, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "heros"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "heros" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "powers"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "powers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ahero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_power_id" ON "ahero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_ahero_powers_on_hero_id" ON "ahero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ahero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "hero_powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "hero_powers" ("id" integer NOT NULL PRIMARY KEY, "strength" varchar DEFAULT NULL, "hero_id" integer NOT NULL, "power_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a064e6fddd"
+FOREIGN KEY ("hero_id")
+  REFERENCES "heros" ("id")
+, CONSTRAINT "fk_rails_1e7d81986f"
+FOREIGN KEY ("power_id")
+  REFERENCES "powers" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_hero_id" ON "hero_powers" ("hero_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_hero_powers_on_power_id" ON "hero_powers" ("power_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "hero_powers" ("id","strength","hero_id","power_id","created_at","updated_at")
+                     SELECT "id","strength","hero_id","power_id","created_at","updated_at" FROM "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ahero_powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230326072044)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230326071823),
+(20230326071854);
+
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-29 17:42:42.875402"], ["updated_at", "2023-03-29 17:42:42.875402"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-03-29 17:42:42.877131"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "19883c1be68a9d3a7fbe99e7cc03b7901cf68118"], ["created_at", "2023-03-29 17:42:42.879015"], ["updated_at", "2023-03-29 17:42:42.879015"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.2ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chris Hemsworth"], ["super_name", "Thor"], ["created_at", "2023-03-29 17:42:42.893884"], ["updated_at", "2023-03-29 17:42:42.893884"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.2ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Peter Parker"], ["super_name", "Spider-Man"], ["created_at", "2023-03-29 17:42:42.895846"], ["updated_at", "2023-03-29 17:42:42.895846"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chadwick Boseman"], ["super_name", "Black Pathner"], ["created_at", "2023-03-29 17:42:42.897220"], ["updated_at", "2023-03-29 17:42:42.897220"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruce Banner"], ["super_name", "Hulk"], ["created_at", "2023-03-29 17:42:42.898416"], ["updated_at", "2023-03-29 17:42:42.898416"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Steve Ditko"], ["super_name", "Dr Strange"], ["created_at", "2023-03-29 17:42:42.899539"], ["updated_at", "2023-03-29 17:42:42.899539"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Create (0.1ms)[0m  [1m[32mINSERT INTO "heros" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gal Gadot"], ["super_name", "Wonder Woman"], ["created_at", "2023-03-29 17:42:42.900832"], ["updated_at", "2023-03-29 17:42:42.900832"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.2ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Super strength"], ["description", "has superhuman strength and can fly"], ["created_at", "2023-03-29 17:42:42.905714"], ["updated_at", "2023-03-29 17:42:42.905714"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reflexes"], ["description", "is alert,fast, with hightened senses"], ["created_at", "2023-03-29 17:42:42.907163"], ["updated_at", "2023-03-29 17:42:42.907163"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Martial arts"], ["description", "expert hand to hand combatant"], ["created_at", "2023-03-29 17:42:42.908656"], ["updated_at", "2023-03-29 17:42:42.908656"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.2ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Incredible strength"], ["description", "has incredible superhuman strength"], ["created_at", "2023-03-29 17:42:42.909911"], ["updated_at", "2023-03-29 17:42:42.909911"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Create (0.1ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "complex shields"], ["description", "has powers to create barries and shields"], ["created_at", "2023-03-29 17:42:42.911489"], ["updated_at", "2023-03-29 17:42:42.911489"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/heroes" for 127.0.0.1 at 2023-03-29 20:43:20 +0300
+Processing by HeroesController#index as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "hero"=>{}}
+  [1m[36mHero Load (1.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heroes_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.6ms | Allocations: 2799)
+
+
+Started GET "/heroes/4" for 127.0.0.1 at 2023-03-29 20:43:25 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"username"=>"", "email"=>"peter@email.com", "password"=>"[FILTERED]", "id"=>"4", "hero"=>{}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers]   [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "hero_powers" ON "powers"."id" = "hero_powers"."power_id" WHERE "hero_powers"."hero_id" = ?[0m  [["hero_id", 4]]
+[active_model_serializers]   ↳ app/controllers/heroes_controller.rb:10:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (7.15ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.5ms | Allocations: 8117)
+
+
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:03:14 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x000000010a5ac700>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+Completed 422 Unprocessable Entity in 23ms (ActiveRecord: 2.3ms | Allocations: 21381)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Strength Average is not a valid strength):
+  
+app/controllers/hero_powers_controller.rb:3:in `create'
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:03:52 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x000000010b3fe510>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHeroPower Create (0.7ms)[0m  [1m[32mINSERT INTO "hero_powers" ("strength", "hero_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["strength", "Average"], ["hero_id", 3], ["power_id", 1], ["created_at", "2023-03-29 18:03:52.775269"], ["updated_at", "2023-03-29 18:03:52.775269"]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (2.68ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.7ms | Allocations: 16281)
+
+
+  
+NoMethodError (undefined method `name' for #<HeroPower:0x000000010a353170>):
+  
+app/controllers/hero_powers_controller.rb:5:in `create'
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:05:00 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x0000000107014f70>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (1.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHeroPower Create (1.7ms)[0m  [1m[32mINSERT INTO "hero_powers" ("strength", "hero_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["strength", "Average"], ["hero_id", 3], ["power_id", 1], ["created_at", "2023-03-29 18:05:00.127901"], ["updated_at", "2023-03-29 18:05:00.127901"]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (6.13ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 7.2ms | Allocations: 6426)
+
+
+  
+NoMethodError (undefined method `name' for #<HeroPower:0x0000000105878ee8>):
+  
+app/controllers/hero_powers_controller.rb:5:in `create'
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:12:09 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x000000010b74d900>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHeroPower Create (0.5ms)[0m  [1m[32mINSERT INTO "hero_powers" ("strength", "hero_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["strength", "Average"], ["hero_id", 3], ["power_id", 1], ["created_at", "2023-03-29 18:12:09.673664"], ["updated_at", "2023-03-29 18:12:09.673664"]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.4ms | Allocations: 13736)
+
+
+  
+NameError (uninitialized constant HeroPowersController::HeroPowersSerializer
+Did you mean?  HeroPowerSerializer
+               HeroAndPowersSerializer):
+  
+app/controllers/hero_powers_controller.rb:5:in `create'
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:12:46 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x000000010c74c9f0>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHeroPower Create (0.2ms)[0m  [1m[32mINSERT INTO "hero_powers" ("strength", "hero_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["strength", "Average"], ["hero_id", 3], ["power_id", 1], ["created_at", "2023-03-29 18:12:46.313994"], ["updated_at", "2023-03-29 18:12:46.313994"]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (18.35ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 2.5ms | Allocations: 16179)
+
+
+  
+NoMethodError (undefined method `name' for #<HeroPower:0x000000010d03bb60>):
+  
+app/controllers/hero_powers_controller.rb:5:in `create'
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:14:15 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x000000010b7c5748>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHeroPower Create (0.2ms)[0m  [1m[32mINSERT INTO "hero_powers" ("strength", "hero_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["strength", "Average"], ["hero_id", 3], ["power_id", 1], ["created_at", "2023-03-29 18:14:15.734694"], ["updated_at", "2023-03-29 18:14:15.734694"]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (2.89ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms | Allocations: 16214)
+
+
+  
+NoMethodError (undefined method `name' for #<HeroPower:0x000000010b757798>):
+  
+app/controllers/hero_powers_controller.rb:5:in `create'
+Started POST "/hero_powers" for 127.0.0.1 at 2023-03-29 21:15:00 +0300
+Processing by HeroPowersController#create as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}}
+[31mUnpermitted parameter: :hero_power. Context: { controller: HeroPowersController, action: create, request: #<ActionDispatch::Request:0x000000010b60b038>, params: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "controller"=>"hero_powers", "action"=>"create", "hero_power"=>{"strength"=>"Average", "hero_id"=>3, "power_id"=>1}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mPower Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mHeroPower Create (0.2ms)[0m  [1m[32mINSERT INTO "hero_powers" ("strength", "hero_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["strength", "Average"], ["hero_id", 3], ["power_id", 1], ["created_at", "2023-03-29 18:15:00.786461"], ["updated_at", "2023-03-29 18:15:00.786461"]]
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hero_powers_controller.rb:3:in `create'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (2.75ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.8ms | Allocations: 16175)
+
+
+  
+NoMethodError (undefined method `name' for #<HeroPower:0x000000010b5b1150>):
+  
+app/controllers/hero_powers_controller.rb:5:in `create'
+Started POST "/heroes" for 127.0.0.1 at 2023-03-29 21:16:45 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/heroes"):
+  
+Started GET "/heroes" for 127.0.0.1 at 2023-03-29 21:16:49 +0300
+Processing by HeroesController#index as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "hero"=>{}}
+  [1m[36mHero Load (0.8ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heroes_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.8ms | Allocations: 1667)
+
+
+Started GET "/heroes/4" for 127.0.0.1 at 2023-03-29 21:16:54 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "id"=>"4", "hero"=>{}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (6.26ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 3672)
+
+
+  
+NoMethodError (undefined method `heros' for #<Hero:0x000000010b1b7cc0>):
+  
+app/controllers/heroes_controller.rb:10:in `show'
+Started GET "/heroes/4" for 127.0.0.1 at 2023-03-29 21:17:08 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "id"=>"4", "hero"=>{}}
+  [1m[36mHero Load (0.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (4.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 5116)
+
+
+  
+NoMethodError (undefined method `heroes' for #<Hero:0x000000010c0c63d8>
+Did you mean?  hero_powers):
+  
+app/controllers/heroes_controller.rb:10:in `show'
+Started GET "/heroes/4" for 127.0.0.1 at 2023-03-29 21:17:22 +0300
+Processing by HeroesController#show as */*
+  Parameters: {"strength"=>"Average", "power_id"=>1, "hero_id"=>3, "id"=>"4", "hero"=>{}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/heroes_controller.rb:8:in `show'
+[active_model_serializers]   [1m[36mPower Load (0.6ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "hero_powers" ON "powers"."id" = "hero_powers"."power_id" WHERE "hero_powers"."hero_id" = ?[0m  [["hero_id", 4]]
+[active_model_serializers]   ↳ app/controllers/heroes_controller.rb:10:in `show'
+[active_model_serializers] Rendered HeroAndPowersSerializer with ActiveModelSerializers::Adapter::Attributes (10.97ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 1.8ms | Allocations: 9562)
+
+
